@@ -1,0 +1,36 @@
+\documentclass{rapportECL}
+
+% configuration file
+\input{config/common-config}
+
+\begin{document}
+
+\DateduRapport{date}
+\titre{Titre} %Titre du fichier .pdf
+\UE{UE} %Nom de la UE
+\sujet{Nom UE} %Nom du sujet
+\lfoot{NOM Prénom}
+
+\eleves{Nom Prénom}
+\client{Nom Prénom}
+
+
+%----------- Initialisation -------------------
+
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+
+%%%%%%%%%%%%%%
+%  Sections  %
+%%%%%%%%%%%%%%
+
+\begin{spacing}{1.5}
+\input{sections/abstract}
+\newpage
+\tableofcontents
+\newpage
+\input{sections/introduction}
+\input{sections/conclusion}
+\input{sections/bibliography}
+\end{spacing}
+\end{document}
